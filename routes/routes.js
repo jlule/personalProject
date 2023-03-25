@@ -115,38 +115,38 @@ routes.post('/stores', async(req, res) => {
 })
 
 
-// //PUT update route
-// routes.put('/stores/:id', async(req, res) => {
-//     try {
-//         const {id} = req.params;
-//         const stores = await Stores.findByIdAndUpdate(id, req.body);
-//         // we cannot find any product in database
-//         if(!stores){
-//             return res.status(404).json({message: `cannot find any product with ID ${id}`})
-//         }
-//         const updatedstores = await Stores.findById(id);
-//         res.status(200).json(updatedstores);
+//PUT update route
+routes.put('/stores/:id', async(req, res) => {
+    try {
+        const {id} = req.params;
+        const stores = await Stores.findByIdAndUpdate(id, req.body);
+        // we cannot find any product in database
+        if(!stores){
+            return res.status(404).json({message: `cannot find any product with ID ${id}`})
+        }
+        const updatedstores = await Stores.findById(id);
+        res.status(200).json(updatedstores);
         
-//     } catch (error) {
-//         res.status(500).json({message: error.message})
-//     }
-// })
+    } catch (error) {
+        res.status(500).json({message: error.message})
+    }
+})
 
 
-// // DELETE delete route
-// routes.delete('/stores/:id', async(req, res) =>{
-//     try {
-//         const {id} = req.params;
-//         const stores = await Stores.findByIdAndDelete(id);
-//         if(!product){
-//             return res.status(404).json({message: `cannot find any product with ID ${id}`})
-//         }
-//         res.status(200).json(stores);
+// DELETE delete route
+routes.delete('/stores/:id', async(req, res) =>{
+    try {
+        const {id} = req.params;
+        const stores = await Stores.findByIdAndDelete(id);
+        if(!product){
+            return res.status(404).json({message: `cannot find any product with ID ${id}`})
+        }
+        res.status(200).json(stores);
         
-//     } catch (error) {
-//         res.status(500).json({message: error.message})
-//     }
-// })
+    } catch (error) {
+        res.status(500).json({message: error.message})
+    }
+})
 
 module.exports = routes;
 
