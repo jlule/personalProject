@@ -1,0 +1,33 @@
+###### Products Routes #######
+
+###
+##getall products
+GET http://localhost:3000/products HTTP/1.1
+
+
+###
+##get products by id
+GET http://localhost:3000/products HTTP/1.1
+
+###
+##POST products
+POST http://localhost:3000/products HTTP/1.1
+
+
+###### Stores Routes #######
+
+###
+##getall stores
+GET http://localhost:3000/stores HTTP/1.1
+
+
+###
+##get stores by id
+GET http://localhost:3000/stores HTTP/1.1
+
+###
+##POST stores
+POST http://localhost:3000/stores HTTP/1.1
+
+
+
