@@ -7,6 +7,23 @@ const app = express();
 app.use(express.json());
 
 
+// app.use((req, res, next) =>{
+//     const err = new Error("Not Found")
+//     err.status = 404
+//     next(err)
+// });
+
+// app.use((req,res,next) => {
+//     res.status(err.status || 500);
+//     res.send({
+//         error:{
+//             status: err.status || 500,
+//             message: err.message
+//         }
+//     });
+// });
+
+
 // access all routes
 app.use('/', routes);
 

@@ -13,6 +13,14 @@ GET http://localhost:3000/products/641f4bf3cf779a41470fb9e5 HTTP/1.1
 ##POST products
 POST http://localhost:3000/products HTTP/1.1
 
+####
+##PUT
+PUT http://localhost:3000/products HTTP/1.1
+###
+##DELETE
+
+DELETE http://localhost:3000/products HTTP/1.1
+
 
 ###### Stores Routes #######
 
@@ -28,6 +36,14 @@ GET http://localhost:3000/stores/641f57e38ad2a48bb1caea1c HTTP/1.1
 ###
 ##POST stores
 POST http://localhost:3000/stores HTTP/1.1
+
+####
+##PUT
+PUT http://localhost:3000/stores HTTP/1.1
+###
+##DELETE
+
+DELETE http://localhost:3000/stores HTTP/1.1
 
 
 
