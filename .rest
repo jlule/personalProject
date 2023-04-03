@@ -30,6 +30,7 @@ GET http://localhost:3000/stores HTTP/1.1
 
 
 ###
+
 ##get stores by id
 GET http://localhost:3000/stores/641f57e38ad2a48bb1caea1c HTTP/1.1
 

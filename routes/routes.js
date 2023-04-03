@@ -35,7 +35,7 @@ routes.post('/products', async(req, res) => {
           const product = await Products.create(req.body)
           res.status(200).json(product)
     } catch(error) {
-        console.log(req.body);
+        // console.log(req.body);
         res.status(500).json({message:error.message})
     } 
 })
@@ -82,7 +82,7 @@ routes.get('/stores',  async(req, res) =>{
     try {
         const stores = await Stores.find({});
         res.status(200).json(stores)
-        console.log(stores);
+        // console.log(stores);
         
         }catch (error) {
             res.status(500).json({message:error.message})
